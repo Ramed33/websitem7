@@ -1,0 +1,374 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    background-color:#b0c4de;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #00bfff;
+}
+
+.header__logo {
+    width: 60px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__icon {
+    cursor: pointer;
+}
+
+.header__icon--secondary {
+    opacity: .4;
+}
+
+@media screen and (max-width: 590px) { 
+.header__menu, .header__nav, .header__user {
+        display: grid; 
+        justify-content:center;      
+    }    
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color:#87ceeb;
+}
+
+.footer__logo {
+    width: 30px;
+}
+
+.footer__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__nav {
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link {
+    font-size: .45rem;
+    font-weight: 700;
+}
+
+.presentation {
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.presentation__resume {
+    background-color: #add8e6;
+    padding: 10px 10px;
+}
+
+.presentation__title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.presentation__text {
+    font-size: 1rem;
+    font-weight: 100;
+    text-align:justify;
+    margin: 10px 0;
+}
+
+.products {
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.products__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products__new {
+    width: 100%;
+    margin: 30px auto 0;
+    background-color: #6495ed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 3px;
+}
+
+.products__recommendation {
+    width: 100%;
+    margin: 30px auto 0;
+    background-color: #6495ed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 3px;
+}
+
+.products__wanted {
+    width: 100%;
+    margin: 30px auto 0;
+    background-color: #6495ed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 3px;
+}
+
+.products__item {
+    background-color: #add8e6;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.products__img {
+    width: auto;
+    max-width: 100%;
+}
+
+.products__description {
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.products__btn {
+    display: block;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.products__btn--disable {
+    background-color: rgb(209, 209, 209);
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.information__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.information__form {
+    width: 100%;
+    margin: 30px auto 0;
+    background-color: #6495ed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.information__item {
+    background-color: #add8e6;
+}
+
+.information__submitbtn{
+    width: 80px;
+    height: 40px;
+    background-color:#00bfff;
+    border: 2px solid #0000ff;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.information__submitbtn:hover {
+    background-color:#00ffff;
+}
+
+.acerca {
+    display: flex;
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.acerca__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.acerca__text {
+    font-size: 1rem;
+    font-weight: 100;
+    text-align:justify;
+    margin: 10px 0;
+}
+
+.acerca__article {
+    flex: 2;
+}
+
+.acerca__aside {
+    flex: 1;
+}
+
+.acerca__article, aside {
+    padding: 10px;
+    margin: 10px;
+    background-color: #add8e6;
+}
+
+@media screen and (max-width: 52em) { 
+    .acerca {
+    flex-direction: column;       
+    }    
+
+    .acerca article, aside {
+        flex: 1;  
+    }
+}
+
+.contact {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #add8e6;
+}
+
+.contact__title {
+    width: 100%;
+    font-size: 35px;
+}
+
+.contact__text {
+    width: 100%;
+    font-size: 17px;
+}
+
+.contact p:last-child {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 50em) {
+    .contact {
+        width: 100%;
+        background-color:#b0e0e6;
+    }
+
+    .contact__title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .contact__text, .contact {
+        font-size: 14px;
+    }
+
+    .contact p:last-child {
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+@media (hover: hover) {
+    .information__submitbtn:hover {
+        background-color: #fff;
+        color: #deb887;
+    }
+}
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #ffffff;
+    }
+}*/
+
+.sucursales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px; 
+}
+
+.sucursales__title {
+    font-size: 1.875em;
+    background-color: #87ceeb;
+}
+
+.sucursales__article {
+    background-color: #add8e6;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 52em) { 
+    .sucursales {                      
+        grid-template-columns: 1fr 1fr; 
+    }    
+}
+
+@media screen and (max-width: 35em) { 
+    .sucursales {                      
+        grid-template-columns: 1fr; 
+    }    
+}
